@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "QAIT Extension",
+  "version": "1",
+  "permissions": ["tabs","*://*.youtube.com/*"],
+	"content_scripts":	[
+  	{
+    	"matches": ["*://*.youtube.com/*"],
+    	"js": ["jquery-3.2.1.min.js","content.js"]
+  	}
+	],
+	"browser_action": {
+  "default_icon": "icon.png"
+	}
+	//"background": {
+  //"scripts": ["background.js"]
+//}
+}
